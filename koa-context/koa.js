@@ -3,7 +3,8 @@ const app = new Koa()
 
 app.use((ctx,next)=>{
     console.log(this); //this unequal ctx
-    ctx.require.url 
+    //query for breakpoint
+    ctx.require.url  
     ctx.require.query
     ctx.require.querystring
     ctx.response.type = 'json'//html text/plain img/png
